@@ -16,9 +16,11 @@
 
 		<nav>
 			<ul>
-				<li><a href="about.asp">About</a></li>
-				<li><a href="portfolio.asp">Portfolio</a></li>
-				<li><a href="contact.asp">Contact</a></li>
+				<div id="navBarLinks">
+					<li><a href="about.asp">About</a></li>
+					<li><a href="portfolio.asp">Portfolio</a></li>
+					<li ><a style="border-right: none" href="contact.asp">Contact</a></li>
+				</div>
 			</ul>
 		</nav>
 
@@ -31,8 +33,9 @@
 			<article>
 				<h2 class="headings">About Me</h2>
 					
-				<img src="assets/images/profilepicslack.jpg" alt="Profile Pic">
-					
+				<img id="selfie" src="assets/images/profilepicslack.jpg" alt="Profile Pic">
+				
+				<div id="textBio">
 					<p>
 						My name is Mike Hashimoto. I graduated from Georgia Tech in May 2016 from the Scheller College of Business; I 
 						have a concentration in Information Technology Management. This concentration covers Software Project Development, 
@@ -40,24 +43,40 @@
 					</p>
 					
 					<p>
-						I like DJing, football, basketball, and running. I hope that you enjoy this project!
+						I like DJing, football, basketball, and running. One day, I believe I can combine my passion for music and coding into a career. I hope that you enjoy this project!
 					</p>
-				</article>
+				</div>
+			</article>
 		</section>
 			
+
+
 		<aside>
-			<h3 class="headings">Connect With Me</h3>
-			<p>
-				<img src="" alt="GitHub">
-				<img src="" alt="LinkedIn">
-				<img src="" alt="StackOverflow">
-			</p>
+			<div class="connectMe">
+				<h3 class="headings">Connect With Me</h3>
+				<ul>
+					<div id ="connectImages">
+						<li>
+							<a href="https://github.com/mikehashi"><img src="assets/images/github.png" alt="GitHub"></a>
+						</li>
+
+						<li>
+							<a href="https://www.linkedin.com/in/michael-hashimoto-a644224a/"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+						</li>
+
+						<li>
+							<a href="https://stackoverflow.com/users/7829381/mikehashi"><img src="assets/images/stackoverflow.png" alt="StackOverflow">
+							</a>
+						</li>
+					</div>			
+				</ul>
+			</div>
 		</aside>
 
 	</div>
 	
 	<footer>
-		<p>Copyright 2017 Mike Hashimoto</p>
+		<p>&copy; Copyright 2017 Mike Hashimoto</p>
 	</footer>				
 		
 	</body>
